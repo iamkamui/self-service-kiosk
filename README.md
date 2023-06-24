@@ -1,2 +1,2 @@
 # self-service-kiosk
-There are a projeto to improve my skills
+There are a project to improve my backend skills
