@@ -12,7 +12,7 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-class UserViewSet(viewsets.ModelViewSet):
+class GroupViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows groups to be vieweed or edited.
     """
