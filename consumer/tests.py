@@ -27,3 +27,9 @@ class ProductTestCase(APITestCase):
         self.assertEqual(self.products.count(), 4)
         response = self.client.get('/products/')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+
+    def test_create_product(self):
+        data = {"name":'test', "category":"1", "price":"11.50"}
+        response = self.client.post(f'/products/', data)
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
